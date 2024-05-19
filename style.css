@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 
 .grid-container {
@@ -86,16 +87,34 @@ body {
 }
 
 .item2 {
+  position: relative;
   width: 100%;
-  /* overflow: hidden; */
+  min-height: 0;
   overflow: auto;
   background-color: #121212;
   grid-area: main-content;
+}
+.item2__content{
   padding: 10px;
 }
-
 .header{
   display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #121212;
+
+}
+.header__container{
+  display: flex;
+}
+.header__buttons{
+  display: flex;
+}
+.header__more{
+  display: flex;  
 }
 
 .item2::-webkit-scrollbar {
